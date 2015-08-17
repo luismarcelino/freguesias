@@ -4,11 +4,11 @@ Freguesias is a Laravel 5 package that provides all administrative regions in Po
 
 ## Instalation
 
-Add `horizontes/freguesias` to `composer.json`.
+Add `luismarcelino/freguesias` to `composer.json`.
 
-    "horizontes/freguesias": "dev-master"
+    "luismarcelino/freguesias": "dev-master"
 
-Run `composer update` to pull down the latest version of Country List.
+Run `composer update` to pull down the latest version of Freguesias List.
 
 Edit `config/app.php` and add the `provider` and `filter`
 
