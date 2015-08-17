@@ -30,7 +30,7 @@ class MigrationCommand extends Command {
     {
         parent::__construct();
         $app = app();
-        $app['database']->addNamespace('freguesias',substr(__DIR__,0,-8).'database');
+        $app['view']->addNamespace('freguesias',substr(__DIR__,0,-8).'database');
     }
 
     /**
@@ -103,7 +103,7 @@ class MigrationCommand extends Command {
 
                 $fs = fopen($migrationFile, 'x');
                 if ($fs) {
-                    $output = "<?php\n\n" .$app['database']->make($outputFile)->with('table', 'freguesias')->render();
+                    $output = "<?php\n\n" .$app['view']->make($outputFile)->with('table', 'freguesias')->render();
 
                     fwrite($fs, $output);
                     fclose($fs);
@@ -118,7 +118,7 @@ class MigrationCommand extends Command {
 
         //Create the seeder
         $seeder_file = $this->laravel->path."/../database/seeds/FreguesiasSeeder.php";
-        $output = "<?php\n\n" .$app['database']->make('freguesias::generators.seeder')->render();
+        $output = "<?php\n\n" .$app['view']->make('freguesias::generators.seeder')->render();
 
         if (!file_exists( $seeder_file )) {
             $fs = fopen($seeder_file, 'x');

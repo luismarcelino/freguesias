@@ -1,11 +1,6 @@
 {
 	"name" : "horizontes/freguesias",
 	"version": "dev-master",
-	"source": {
-		"url": "git://github.com/luismarcelino/freguesias.git",
-		"type": "git",
-		"reference": "master"
-	},
 	"description" : "Freguesias is a bundle for Laravel with all Portuguese administrative regions.",
 	"type" : "laravel-library",
 	"authors" : [{
