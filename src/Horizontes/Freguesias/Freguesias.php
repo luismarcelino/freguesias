@@ -41,10 +41,13 @@ class Freguesias extends Model {
     {
         //Get the freguesias from the CSV file
         if (sizeof($this->freguesias) == 0){
-			if (($handle = fopen(__DIR__ . '/reguesias.json', 'r')) !== FALSE) {
+			if (($handle = fopen(__DIR__ . '/freguesias.csv', 'r')) !== FALSE) {
 			    while (($data = fgetcsv($handle)) !== FALSE) {
 			        if (count($data)>1){
 						$distritoId = $data[0];
+						if (!is_numeric($distritoId)){
+							continue;
+						}
 						if (!isset($this->freguesias[$distritoId])){
 							$this->freguesias[$distritoId]=[
 								'id' => $distritoId,

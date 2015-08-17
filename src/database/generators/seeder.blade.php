@@ -18,9 +18,9 @@ class FreguesiasSeeder extends Seeder {
             DB::table(\Config::get('freguesias.table_name'))->insert(array(
                 'id' => $freguesia['id'],
                 'parent_id' => $freguesia['parent_id'],
-                'type' => freguesia['type'],
-                'name' => $freguesia['name'],
-                'short_name' => $freguesia['short_name'],
+                'type' => ''.$freguesia['type'],
+                'name' => ''.$freguesia['name'],
+                'short_name' => ''.$freguesia['short_name'],
             ));
         }
     }

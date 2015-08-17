@@ -12,7 +12,7 @@ class SetupFreguesiasTable extends Migration {
 		// Creates the users table
 		Schema::create(\Config::get('freguesias.table_name'), function($table)
 		{
-		    $table->integer('id')->index();
+		    $table->string('id',6)->index();
 		    $table->integer('parent_id')->unsigned()->nullable();
 		    $table->enum('type', ['distrito', 'concelho', 'freguesia']);
 		    $table->string('name', 255);
