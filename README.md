@@ -38,7 +38,7 @@ This will generate the `<timestamp>_setup_freguesias_table.php` migration and th
     $this->call('FreguesiasSeeder');
     $this->command->info('Seeded the freguesias!'); 
 
-You may now run the seeder and fill the 'freguesias' table with the artisan migrate command:
+You may now run the seeder and fill the `freguesias` table with the artisan migrate command:
 
     $ php artisan migrate --seed
     
