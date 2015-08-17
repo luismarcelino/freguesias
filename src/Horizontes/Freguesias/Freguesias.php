@@ -1,6 +1,6 @@
 <?php
 
-namespace Webpatser\Countries;
+namespace Horizontes\Freguesias;
 
 use Illuminate\Database\Eloquent\Model;
 

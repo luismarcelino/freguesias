@@ -7,7 +7,7 @@ Freguesias is a Laravel 5 package that provides all administrative regions in Po
 Add `horizontes/freguesias` to `composer.json`.
 
     "horizontes/freguesias": "dev-master"
-    
+
 Run `composer update` to pull down the latest version of Country List.
 
 Edit `config/app.php` and add the `provider` and `filter`
@@ -31,14 +31,7 @@ Optionaly you can publishing the configuration if you want to change the default
 To generate the migration file use:
 
     $ php artisan freguesias:migration
-    
-This will generate the `<timestamp>_setup_freguesias_table.php` migration and the `FreguesiasSeeder.php` seeder. To make sure the data is seeded insert the following code in the `seeds/DatabaseSeeder.php`
 
-    //Seed the countries
-    $this->call('FreguesiasSeeder');
-    $this->command->info('Seeded the freguesias!'); 
+This will generate the `<timestamp>_setup_freguesias_table.php` migration and the `FreguesiasSeeder.php` seeder. To run just this seeder user the artisan command:
 
-You may now run the seeder and fill the `freguesias` table with the artisan migrate command:
-
-    $ php artisan migrate --seed
-    
+    php artisan db:seed --class=FreguesiasSeeder

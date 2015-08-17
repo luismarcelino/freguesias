@@ -1,6 +1,6 @@
 <?php
 
-namespace Horiontes\Freguesias;
+namespace Horizontes\Freguesias;
 
 use Illuminate\Support\Facades\Facade;
 

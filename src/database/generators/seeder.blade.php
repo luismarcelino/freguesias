@@ -20,7 +20,7 @@ class FreguesiasSeeder extends Seeder {
                 'parent_id' => $freguesia['parent_id'],
                 'type' => freguesia['type'],
                 'name' => $freguesia['name'],
-                'short_name' => => $freguesia['short_name'],
+                'short_name' => $freguesia['short_name'],
             ));
         }
     }
