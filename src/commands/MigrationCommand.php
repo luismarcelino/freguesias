@@ -19,7 +19,7 @@ class MigrationCommand extends Command {
      *
      * @var string
      */
-    protected $description = 'Creates a migration following the Laravel-countries specifications.';
+    protected $description = 'Creates a migration following the Freguesias specifications.';
 
     /**
      * Create a new command instance.
