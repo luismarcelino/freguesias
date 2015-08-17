@@ -13,13 +13,13 @@ Run `composer update` to pull down the latest version of Country List.
 Edit `config/app.php` and add the `provider` and `filter`
 
     'providers' => [
-        Horizontes\Freguesias\FreguesiasServiceProvider::class,,
+        Luismarcelino\Freguesias\FreguesiasServiceProvider::class,,
     ]
 
 Now add the alias.
 
     'aliases' => [
-        'Freguesias' => Horizontes\Freguesias\FreguesiasFacade::class,
+        'Freguesias' => Luismarcelino\Freguesias\FreguesiasFacade::class,
     ]
 
 ## Publishing

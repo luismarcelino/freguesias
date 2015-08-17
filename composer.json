@@ -1,5 +1,5 @@
 {
-	"name" : "horizontes/freguesias",
+	"name" : "luismarcelino/freguesias",
 	"version": "dev-master",
 	"description" : "Freguesias is a bundle for Laravel with all Portuguese administrative regions.",
 	"type" : "laravel-library",
@@ -24,7 +24,7 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Horizontes\\Freguesias" : "src/"
+			"Luismarcelino\\Freguesias" : "src/"
 		},
 		"classmap" : [
 			"src/commands"

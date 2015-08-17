@@ -1,5 +1,5 @@
 <?php
-namespace Horizontes\Freguesias;
+namespace Luismarcelino\Freguesias;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
