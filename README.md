@@ -32,6 +32,10 @@ To generate the migration file use:
 
     $ php artisan freguesias:migration
 
-This will generate the `<timestamp>_setup_freguesias_table.php` migration and the `FreguesiasSeeder.php` seeder. To run just this seeder user the artisan command:
+This will generate the `<timestamp>_setup_freguesias_table.php` migration and the `FreguesiasSeeder.php` seeder. To run the migration, run as usual:
+
+    php artisan migrate:refresh
+
+To run just this seeder user the artisan command:
 
     php artisan db:seed --class=FreguesiasSeeder

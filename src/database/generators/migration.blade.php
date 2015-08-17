@@ -13,12 +13,13 @@ class SetupFreguesiasTable extends Migration {
 		Schema::create(\Config::get('freguesias.table_name'), function($table)
 		{
 		    $table->string('id',6)->index();
-		    $table->integer('parent_id')->unsigned()->nullable();
+		    $table->string('parent_id',6)->nullable();
 		    $table->enum('type', ['distrito', 'concelho', 'freguesia']);
 		    $table->string('name', 255);
 			$table->string('short_name', 255)->nullable();
 
 		    $table->primary('id');
+			$table->foreign('parent_id')->references('id')->on(\Config::get('freguesias.table_name'));
 		});
 	}
 

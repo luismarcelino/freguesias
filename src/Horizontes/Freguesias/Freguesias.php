@@ -73,7 +73,7 @@ class Freguesias extends Model {
 								'id' => $freguesiaId,
 								'name' => $data[6],
 								'short_name' => $data[5],
-								'type' => 'concelho',
+								'type' => 'freguesia',
 								'parent_id' => $concelhoId,
 							];
 						}
