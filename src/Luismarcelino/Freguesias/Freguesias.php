@@ -125,4 +125,9 @@ class Freguesias {
 	    //Return the countries
 		return $freguesias;
 	}
+
+	static public function getDistritos(){
+		return Freguesia::getDistritos();
+	}
+
 }

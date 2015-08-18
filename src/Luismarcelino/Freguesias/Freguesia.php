@@ -42,15 +42,20 @@ class Freguesia extends Model {
     }
 
     public function parentAdmistrative() {
-        return $this->belongsTo('Freguesia', 'parent_id');
+        return $this->belongsTo('Luismarcelino\Freguesias\Freguesia', 'parent_id');
     }
 
     public function childAdmistratives()
     {
-        return $this->hasMany('Freguesia', 'parent_id');
+        return $this->hasMany('Luismarcelino\Freguesias\Freguesia', 'parent_id');
     }
 
     static public function getDistritos() {
         return Freguesia::whereNull('parent_id');
     }
+
+    static public function getConcelhos($distritoId) {
+        return Freguesia::whereNull('parent_id');
+    }
+
 }
