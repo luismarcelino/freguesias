@@ -5,10 +5,10 @@ namespace Luismarcelino\Freguesias;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * CountryList
+ * Freguesias
  *
  */
-class Freguesias extends Model {
+class Freguesias {
 
 	/**
 	 * @var string
@@ -21,16 +21,6 @@ class Freguesias extends Model {
 	 * The table for the freguesias in the database, is "freguesias" by default.
 	 */
 	protected $table;
-
-    /**
-     * Constructor.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-       $this->table = \Config::get('freguesias.table_name');
-    }
 
     /**
      * Get the countries from the JSON file, if it hasn't already been loaded.
